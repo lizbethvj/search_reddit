@@ -27,8 +27,7 @@ devtools::install_github("kurtawirth/botscan")
 This package connects <code>botometer</code> to <code>rtweet</code>. As a 
 result, each user must have previously acquired authentication from Twitter and 
 instructions to do that [can be found here](http://rtweet.info/articles/auth.html).
-
-Users will also need to install the latest version of Python, as botscan 
+ will also need to install the latest version of Python, as botscan 
 accesses Python-based <code>botometer</code>, as well as acquiring a [Mashape 
 key](https://market.mashape.com/OSoMe/botometer). Doing so requires a Mashape
 account. BotOMeter's default rate limit is 2,000 inquiries per day, so users
