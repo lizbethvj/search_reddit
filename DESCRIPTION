@@ -1,0 +1,14 @@
+Package: srchReddit
+Title: Sentiment Analysis on Domestic Abuse
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Lizbeth",
+           family = "Vazquez-Jorge",
+           role = c("aut", "cre"),
+           email = "lizbethv@usf.edu")
+Description: This package searches reddit posts and runs sentiment analysis on domestic abuse.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
