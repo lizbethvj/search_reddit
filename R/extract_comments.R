@@ -5,9 +5,9 @@
 #' @return data frame with comments
 #' @export
 #'
-#' @importFrom purrr map_dfr
+#' @importFrom purrr map_dfr quietly 
 #' @importFrom RedditExtractoR reddit_content
-#' @importFrom dplyr rename as_tibble
+#' @import dplyr
 #' 
 extract_comments <- function(urls){
   
@@ -20,7 +20,7 @@ extract_comments <- function(urls){
       mutate(across(.fns = as.character))
   }
   
-  map_dfr(urls, reddit_content_chr, .id = "post_id") %>% 
+  map_dfr(urls, quiet_reddit_content, .id = "post_id") %>% 
     rename(comment_id = id) %>%
     as_tibble()
 }

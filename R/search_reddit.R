@@ -10,7 +10,7 @@
 #'@importFrom assertthat assert_that 
 #'@importFrom glue glue
 #'@importFrom jsonlite fromJSON
-#'@importFrom dplyr as_tibble mutate select
+#'@importFrom dplyr as_tibble mutate select `%>%`
 #'@export
 search_reddit <- function (search,  
                            max_results = 50, 
