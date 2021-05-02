@@ -21,6 +21,6 @@ extract_comments <- function(urls){
   }
   
   map_dfr(urls, quiet_reddit_content, .id = "post_id") %>% 
-    rename(comment_id = id) %>%
+    rename("comment_id" = "id") %>%
     as_tibble()
 }
