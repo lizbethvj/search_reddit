@@ -35,8 +35,9 @@ search_reddit <- function (search,
   #Tidy Results Table
   result.df <- result.json[["data"]][["children"]][["data"]] %>%
     as_tibble() %>%
-    mutate(url = paste0(reddit.url,permalink)) %>%
-    select(title, subreddit, num_comments, url)
+    mutate("url" = paste0(reddit.url,.data$permalink)) %>%
+    select(all_of(c('title', 'subreddit', 'num_comments', 'url')))
   
   return(result.df)
+  
 }
