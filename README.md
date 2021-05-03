@@ -39,10 +39,18 @@ Next, the fun begins with <code>SAoDA</code>.
 
 Its first argument takes any Reddit query.
 
-The next argument determines how long an open stream of Reddit comments will be
-collected In order to gather information.
+The next argument determines how long an open stream of Reddit comments will be collected In order to gather information.
 If the user prefers to use Reddit's 
-Search API, the next argument allows the user to specify the number of Reddit posts
-to extract.
+Search API, the next argument allows the user to specify the number of Reddit posts to extract.
+
+calculate net sentiment argument is the calculation of negative or positive comments on social media. It is positive mentions minus negative mentions. 
+
+extract_comments argument takes out comments of domestic abuse from Reddit posts in order to list them later. 
+
+plot_comments organizes a dataframe from which all extracted comments are plotted into columns and rows. 
+
+process_comments gives insight explanation about the surrounding topic. 
+
+run_sentiment analyzes the social media discussion around domestic abuse and determining whether comments,posts,reviews are positive or negative. 
 
 
